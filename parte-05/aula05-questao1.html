@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <title>Uso de inputs diferentes</title>
+   </head>
+   <body>
+      <form>
+         <label for="nome">Insira seu nome:</label><input type="text" id="nome"><br>
+         <label for="senha">Crie uma senha:</label><input type="password" id="senha"><br>
+         <label for="data">Informe sua data de nascimento:</label><input type="date" name="Nascimento" id="data"><br>
+         <span>Informe seu sexo:</span><input type="radio" name="sexo" id="m"><label for="m">Masculino</label><input type="radio" name="sexo" id="f"><label for="f">Feminino</label><input type="radio" name="sexo" id="não"><label for="não">Prefiro não informar.</label><br>
+         <span>Disponibilidade de horário:</span><input type="checkbox" name="horário" id="manhã"><label for="manhã">Manhã</label><input type="checkbox" name="horário" id="tarde"><label for="tarde">Tarde</label><input type="checkbox" name="horário" id="noite"><label for="noite">Noite</label><br>
+         <label for="informealtura">Informe sua altura (em centímetros):</label><input type="range" name="altura" id="informealtura" min="150" max="220" oninput="mostrealtura.value = informealtura.value"><input type="text" name="altura" id="mostrealtura"><br>
+         <button type="submit" onclick="alert('Obrigado por participar!')">Envie as informações</button><button type="reset">Limpar</button>
+      </form>
+   </body>
+</html>

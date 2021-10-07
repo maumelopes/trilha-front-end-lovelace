@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <title>Formulário</title>
+   </head>
+   <body>
+      <h1>Formulário de cadastro</h1>
+      <form>
+         <fieldset>
+            <legend>Criação de usuário</legend>
+            <label for="usuário">Defina um nome de usuário:</label><br>
+            <input type="text" maxlength="12" size="20"><br>
+            <label for="senha">Crie uma senha:</label><br>
+            <input type="password" id="senha" minlength="6" maxlength="12" size="20"><br>
+         </fieldset>
+         <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Insira seu nome completo:</label><br>
+            <input type="text" id="nome" minlength="4"><br>
+            <label for="data">Informe sua data de nascimento:</label><br>
+            <input type="date" name="Nascimento" id="data"><br>
+            <span>Informe seu sexo:</span><br>
+            <input type="radio" name="sexo" id="m"><label for="m">Masculino</label><input type="radio" name="sexo" id="f"><label for="f">Feminino</label><input type="radio" name="sexo" id="não"><label for="não">Prefiro não informar.</label><br>
+            <span>Disponibilidade de horário:</span><br>
+            <input type="checkbox" name="horário" id="manhã"><label for="manhã">Manhã</label><br>
+            <input type="checkbox" name="horário" id="tarde"><label for="tarde">Tarde</label><br>
+            <input type="checkbox" name="horário" id="noite"><label for="noite">Noite</label><br>
+            <label for="informealtura">Informe sua altura (em centímetros):</label><br>
+            <input type="range" name="altura" id="informealtura" min="150" max="220" oninput="mostrealtura.value = informealtura.value"><input type="number" name="altura" id="mostrealtura" min="150" max="220" maxlength="3" size="4" oninput="informealtura.value = mostrealtura.value"><br>
+            <button type="submit" onclick="alert('Obrigado por participar!')">Envie as informações</button><button type="reset">Limpar</button>
+         </fieldset>
+      </form>
+   </body>
+</html>
