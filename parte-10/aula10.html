@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <title>Brasil</title>
+   </head>
+   <body>
+      <h1>Bandeira do Brasil</h1>
+      <canvas id="canvas" width="801" height="581"></canvas>
+      <script type="application/javascript">
+         var canvas = document.getElementById("canvas");
+         if (canvas.getContext) {
+            var bandeiraBrasil = canvas.getContext("2d");
+
+            bandeiraBrasil.fillStyle = "rgb(1, 150, 66)";
+            bandeiraBrasil.fillRect(0, 0, 800, 580);
+
+            bandeiraBrasil.fillStyle = 'rgb(255, 203, 1)';
+            bandeiraBrasil.beginPath();
+            bandeiraBrasil.moveTo(55,290);
+            bandeiraBrasil.lineTo(400, 510);
+            bandeiraBrasil.lineTo(745, 290);
+            bandeiraBrasil.lineTo(400, 70);
+            bandeiraBrasil.closePath();
+            bandeiraBrasil.fill();
+
+            bandeiraBrasil.fillStyle = 'rgb(45, 42, 140)';
+            bandeiraBrasil.beginPath();
+            bandeiraBrasil.arc(400, 290, 145, 0, Math.PI * 2, true);
+            bandeiraBrasil.closePath();
+            bandeiraBrasil.fill();
+
+            bandeiraBrasil.fillStyle = "rgb(255, 255, 255)";
+            bandeiraBrasil.beginPath();
+            bandeiraBrasil.moveTo(264, 238);
+            bandeiraBrasil.bezierCurveTo(366, 231, 465, 261, 542, 320);
+            bandeiraBrasil.lineTo(541, 325);
+            bandeiraBrasil.lineTo(540, 329);
+            bandeiraBrasil.lineTo(537, 335);
+            bandeiraBrasil.bezierCurveTo(473, 285, 352, 246, 259, 255);
+            bandeiraBrasil.lineTo(261, 248);
+            bandeiraBrasil.lineTo(263, 243);
+            bandeiraBrasil.lineTo(264, 238);
+            bandeiraBrasil.closePath();
+            bandeiraBrasil.fill();
+            function drawStar(x, y, t){
+               bandeiraBrasil.beginPath();
+               bandeiraBrasil.moveTo(x, y);
+               if (t < 2){
+                  bandeiraBrasil.lineTo(x + 3 - t, y + 6 - t);
+                  bandeiraBrasil.lineTo(x + 8 - t, y + 6 - t);
+                  bandeiraBrasil.lineTo(x + 4 - t, y + 10 - t);
+                  bandeiraBrasil.lineTo(x + 5 - t, y + 15 - t);
+                  bandeiraBrasil.lineTo(x, y + 13 - t);
+                  bandeiraBrasil.lineTo(x - 5 - t, y + 15 - t);
+                  bandeiraBrasil.lineTo(x - 4 - t, y + 10 - t);
+                  bandeiraBrasil.lineTo(x - 8 - t, y + 6 - t);
+                  bandeiraBrasil.lineTo(x - 3 - t, y + 6 - t);
+               }
+               if (t === 2){
+                  bandeiraBrasil.lineTo(x + 2, y + 3);
+                  bandeiraBrasil.lineTo(x + 6, y + 3);
+                  bandeiraBrasil.lineTo(x + 3, y + 6);
+                  bandeiraBrasil.lineTo(x + 4, y + 11);
+                  bandeiraBrasil.lineTo(x, y + 9);
+                  bandeiraBrasil.lineTo(x - 4, y + 11);
+                  bandeiraBrasil.lineTo(x - 3, y + 6);
+                  bandeiraBrasil.lineTo(x - 6, y + 3);
+                  bandeiraBrasil.lineTo(x - 2, y + 3);
+               }
+               if (t === 3){
+                  bandeiraBrasil.lineTo(x + 1, y + 3);
+                  bandeiraBrasil.lineTo(x + 3, y + 3);
+                  bandeiraBrasil.lineTo(x + 1.5, y + 6);
+                  bandeiraBrasil.lineTo(x + 2.5, y + 9);
+                  bandeiraBrasil.lineTo(x, y + 7);
+                  bandeiraBrasil.lineTo(x - 2.5, y + 9);
+                  bandeiraBrasil.lineTo(x - 1.5, y + 6);
+                  bandeiraBrasil.lineTo(x - 3, y + 3);
+                  bandeiraBrasil.lineTo(x - 1, y + 3);
+               }
+               if (t === 4){
+                  bandeiraBrasil.lineTo(x + 1, y + 2);
+                  bandeiraBrasil.lineTo(x + 3, y + 2);
+                  bandeiraBrasil.lineTo(x + 1, y + 4);
+                  bandeiraBrasil.lineTo(x + 1.5, y + 6);
+                  bandeiraBrasil.lineTo(x, y + 4);
+                  bandeiraBrasil.lineTo(x - 1.5, y + 6);
+                  bandeiraBrasil.lineTo(x - 1, y + 4);
+                  bandeiraBrasil.lineTo(x - 3, y + 2);
+                  bandeiraBrasil.lineTo(x - 1, y + 2);
+               }
+               bandeiraBrasil.closePath();
+               bandeiraBrasil.fill();
+            }
+            drawStar(440, 239, 0);
+            drawStar(281, 258, 0);
+            drawStar(398, 349, 0);
+            drawStar(293, 319, 0);
+            drawStar(340, 362, 0);
+            drawStar(498, 334, 0);
+            drawStar(440, 385, 1);
+            drawStar(470, 381, 1);
+            drawStar(497, 361, 1);
+            drawStar(504, 349, 1);
+            drawStar(412, 320, 1);
+            drawStar(399, 307, 1);
+            drawStar(344, 291, 1);
+            drawStar(322, 334, 1);
+            drawStar(277, 332, 1);
+            drawStar(319, 350, 2);
+            drawStar(381, 323, 2);
+            drawStar(433, 283, 2);
+            drawStar(519, 338, 2);
+            drawStar(484, 368, 2);
+            drawStar(470, 368, 2);
+            drawStar(453, 371, 2);
+            drawStar(428, 367, 2);
+            drawStar(471, 397, 2);
+            drawStar(391, 334, 3);
+            drawStar(306, 313, 3);
+            drawStar(396, 401, 4);
+         }
+      </script>
+   </body>
+</html>
