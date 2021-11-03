@@ -1,0 +1,95 @@
+body {
+   font-family: "Open Sans Condensed", sans-serif;
+   font-style: normal;
+   font-weight: 300;
+}
+h2 {
+   font-size: 72px;
+   line-height: 72px;
+   text-align: center;
+   margin: 7px 0px 0px;
+}
+p {
+   font-size: 50px;
+   line-height: 72px;
+   display: flex;
+   margin: 8px 0px 0px;
+   padding-left: 15px;
+}
+ul {
+   font-size: 50px;
+   line-height: 72px;
+   display: flex;
+   flex-direction: column;
+   margin: 3px 0px 0px 30px;
+   padding-left: 40px;
+}
+section {
+   display: flex;
+   flex-direction: column;
+   background: rgba(248, 231, 79, 0.7);
+   border-radius: 80px;
+}
+section:hover {
+   background: rgb(248, 231, 79);
+}
+.p-educacao {
+   margin: 25px 0px 0px;
+}
+#caixa-header {
+   position: absolute;
+   width: 90%;
+   height: 400px;
+   left: 144px;
+   top: 147px;
+   background: rgba(248, 231, 79, 0.7);
+   border-radius: 100px 0px 0px 100px;
+}
+#caixa-header:hover {
+   background: rgb(248, 231, 79);
+}
+#nome {
+   position: relative;
+   width: 645px;
+   left: 675px;
+   top: 56px;
+   margin: 2px 0px 0px;
+   font-size: 288px;
+   line-height: 225px;
+}
+#foto {
+   position: absolute;
+   width: 532px;
+   height: 697px;
+   left: 38px;
+   top: 85px;
+   border-radius: 266px;
+}
+#contato {
+   position: absolute;
+   width: 525px;
+   height: 658px;
+   left: 38px;
+   top: 903px;
+}
+#educacao {
+   position: absolute;
+   width: 658px;
+   height: 800px;
+   left: 635px;
+   top: 1091px;
+}
+#habilidades {
+   position: absolute;
+   width: 525px;
+   height: 261px;
+   left: 38px;
+   top: 1626px;
+}
+#experiencia {
+   position: absolute;
+   width: 1255px;
+   height: 404px;
+   left: 38px;
+   top: 1952px;
+}
