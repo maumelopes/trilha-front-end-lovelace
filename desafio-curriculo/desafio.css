@@ -40,7 +40,7 @@ section:hover {
    position: absolute;
    width: 90%;
    height: 400px;
-   left: 144px;
+   left: 135px;
    top: 147px;
    background: rgba(248, 231, 79, 0.7);
    border-radius: 100px 0px 0px 100px;
@@ -55,7 +55,7 @@ section:hover {
    top: 56px;
    margin: 2px 0px 0px;
    font-size: 288px;
-   line-height: 225px;
+   line-height: 229px;
 }
 #foto {
    position: absolute;
